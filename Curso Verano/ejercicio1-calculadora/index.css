@@ -1,0 +1,15 @@
+body {
+	background-color: grey;
+}
+
+.numeros-calculadora {
+	background-color: azure;
+}
+
+.numeros-calculadora p {
+	color: crimson;
+}
+
+#operaciones-calculadora {
+	background-color: cadetblue;
+}
