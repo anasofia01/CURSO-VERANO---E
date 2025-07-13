@@ -10,14 +10,14 @@ formulario.addEventListener('submit', function (event) {
 	const infoEmail = inputEmail.value;
 	const infoFrase = fraseFav.value;
 	const infoSelect = selectFecha.value;
-	console.log(
-		'su nombre es' +
-			infoNombre +
-			', su email es ' +
-			infoEmail +
-			', su frase fav es ' +
-			infoFrase +
-			'y su fecha de nacimiento es ' +
-			infoSelect
-	);
+
+	const infoUsuario = {
+		nombre: infoNombre,
+		email: infoEmail,
+		frase: infoFrase,
+		fecha: infoSelect,
+	};
+
+	localStorage.setItem('infoUsuario', JSON.stringify(infoUsuario));
+	alert('Se han registrado los datos');
 });
