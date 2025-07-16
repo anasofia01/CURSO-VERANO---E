@@ -11,7 +11,6 @@ async function characters() {
 	const resultsInfo = data.results;
 
 	resultsInfo.forEach((item) => {
-		console.log(item);
 		container.innerHTML += `
 			<div class="card mb-5 g-col-4" style="width: 18rem;">
   			<img src="${item.image}" class="card-img-top" alt="${item.name}">
