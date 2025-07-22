@@ -13,7 +13,26 @@
 	/>
 	<body>
 		<div class="container mt-5">
-			<button type="button" class="btn btn-success" id="btn-pagina2">Ir a página 1</button>
+			<div class="d-flex justify-content-center mb-5">
+				<button type="button" class="btn btn-success" id="btn-pagina2">Ir a página 1</button>
+			</div>
+			<form id="formulario-filter" class="mt-5">
+				<div class="mb-3">
+					<label for="select-filter" class="form-label">Ingresa la información que deseas buscar:</label>
+					<div class="mb-3">
+						<select class="form-select" aria-label="Default select example" id="select-filter">
+							<option selected>Selecciona un género</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select>
+					</div>
+					<input type="number" class="form-control" id="number-filter" />
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+			<div class="mt-5 mb-5">
+				<div id="cards" class="d-flex justify-content-center flex-wrap gap-4"></div>
+			</div>
 		</div>
 		<script src="pagina2.js"></script>
 		<script
