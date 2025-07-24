@@ -21,9 +21,11 @@ function Home() {
 
 	return (
 		<div className='container'>
-			<div className='d-flex justify-content-center flex-wrap gap-4'>
+			<div className='row'>
 				{episodes.map((episode) => (
-					<Card episode={episode} />
+					<div className='col-3'>
+						<Card episode={episode} />
+					</div>
 				))}
 			</div>
 		</div>
