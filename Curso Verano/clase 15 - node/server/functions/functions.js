@@ -1,14 +1,13 @@
 export const getDataRickMorty = async () => {
-	const getAllCharacters = await fetch('http://localhost:3001/character');
+	const getAllCharacters = await fetch('https://rickandmortyapi.com/api/character');
 	if (!getAllCharacters.ok) {
 		console.error('Falló');
 	}
 
 	const dataCharacters = await getAllCharacters.json();
-	return dataCharacters;
-	// const dataResults = dataCharacters.results;
+	const dataResults = dataCharacters.results;
 
-	//return dataResults;
+	return dataResults;
 };
 
 export const getDataById = async (id) => {
