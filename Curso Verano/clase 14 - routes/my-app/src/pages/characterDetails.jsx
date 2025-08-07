@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getDataById } from '../services/getDataRickMorty';
-import CardCharacter from '../components/cardComponent/card';
+import CharacterCardDetail from '../components/characterCard/characterCard';
 
 function CharacterDetails() {
 	const { id } = useParams();
@@ -18,11 +18,7 @@ function CharacterDetails() {
 		getCharacter(id);
 	}, [id]);
 
-	return (
-		<div>
-			<p>{character.name}</p>
-		</div>
-	);
+	return <div>{character && <CharacterCardDetail character={character} />}</div>;
 }
 
 export default CharacterDetails;

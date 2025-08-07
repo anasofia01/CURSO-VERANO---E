@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 function CardCharacter({ character }) {
 	return (
-		<Card sx={{ maxWidth: 345 }}>
+		<Card sx={{ width: '100%' }}>
 			<CardActionArea>
 				<CardMedia component='img' height='140' image={character.image} alt={character.name} />
 				<CardContent>
